@@ -1,6 +1,6 @@
 {% assign main_menu_linklist = linklists[section.settings.menu].links %}
 
-<div class="relative bg-white" x-data="{ mobileMenuOpen: false}">
+  <div class="relative bg-white" x-data="{ mobileMenuOpen: false}">
   <div class="mx-auto px-4 sm:px-6">
     <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
       <!-- STORE NAME / STORE LOGO -->
@@ -82,6 +82,7 @@
     </div>
   </div>
 
+  {% comment %} MOBILE MENU CONTAINER {% endcomment %}
   <div x-show="mobileMenuOpen" class="absolute z-10 top-0 inset-x-0 p-2 transform origin-top-left md:hidden">
     <div class="shadow-lg rounded-lg ring-1 ring-black ring-opacity-5 bg-white w-full">
       <div class="p-5 divide-y-2 divide-gray-50">
